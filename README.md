@@ -28,6 +28,10 @@ alarm_num = abitrary identfier to distinguish multiple alarms
 alarm_url = url of desired youtube channel/playlist  
 hr:min = time of day you wish to set alarm to trigger  
 ```
+to kill a triggered alarm, run the following:  
+```
+./alarm.sh -k <alarm_num>
+```
 
 # features to be added  
 key command for killing alarm, instead having to figure out PID  

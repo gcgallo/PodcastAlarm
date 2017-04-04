@@ -20,14 +20,14 @@ Clone this repo
 cd into the repo
 
 Run the following command:  
-'''./alarm.sh -a <alarm_num> -u <alarm_url> -s <hr:min>'''
+```./alarm.sh -a <alarm_num> -u <alarm_url> -s <hr:min>```
 
 where:  
-'''
+```
 alarm_num = abitrary identfier to distinguish multiple alarms  
 alarm_url = url of desired youtube channel/playlist  
 hr:min = time of day you wish to set alarm to trigger  
-'''
+```
 
 # features to be added  
 key command for killing alarm, instead having to figure out PID  

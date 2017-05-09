@@ -20,7 +20,7 @@ set_alarm(){
   min=$(echo $1 | awk -F: '{ print $2 }' | xargs echo) 
   echo $min
   echo $hr
-  (crontab -l 2>/dev/null; echo "$min $hr * * * /home/gg/alarm.sh -a $alarm_num -u $alarm_url -t") | crontab -
+  (crontab -l 2>/dev/null; echo "$min $hr * * * ~/PodcastAlarm/alarm.sh -a $alarm_num -u $alarm_url -t") | crontab -
 }
 
 list_alarms(){
@@ -46,9 +46,9 @@ snooze(){
 
 }
 
-#delete_alarm(){
-  #delete alarm specified by alarm number
-#}
+delete_alarm(){
+crontab -u pi -l | grep -v "~/PodcastAlarm/alarm.sh -a $1 -u $alarm_url -t"  | crontab -u pi -
+}
 
 while getopts "a:u:s:ltk:zd:" opt; do
   case $opt in

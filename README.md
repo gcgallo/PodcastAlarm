@@ -6,6 +6,7 @@ a shell script cron job for playing the lastest episode of a podcast at a specif
 a reliable internet connection  
 cron  
 youtube-dl  
+ffmpeg  
 mplayer 
 
 # instructions  
@@ -34,7 +35,7 @@ to kill a triggered alarm, run the following:
 ```
 
 # features to be added  
-key command for killing alarm, instead having to figure out PID  
+key command for killing alarm, instead having to type command   
 press any key snooze feature, variable or predefined snooze time,
 or maybe random snooze time???   
 generalize to work with any podcast, not just ones available on youtube.  
